@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Page</title>
+    <title>Wina's Static Page</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="container">
-        <h1 id="heading">Halo, Saya Wina!</h1>
-        <button onclick="changeHeadingText()">Change Heading Text</button>
+        <h1 id="heading">Halo, Saya Wina! Doakan aku tetap survive ya ^^ </h1>
+        <button id="button" onclick="changeHeadingText()">Klik disini</button>
     </div>
 
     <script>
         function changeHeadingText() {
             document.getElementById('heading').innerText = "Wah, saya berubah!";
+            document.getElementById('button').innerText = "Tekan Ctrl + R";
         }
     </script>
 </body>
