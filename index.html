@@ -12,11 +12,20 @@
         <button id="button" onclick="changeHeadingText()">Klik disini</button>
     </div>
 
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
-        function changeHeadingText() {
-            document.getElementById('heading').innerText = "Wah, saya berubah!";
-            document.getElementById('button').innerText = "Tekan Ctrl + R";
+      let originalText = $('#heading').text();
+      let newText = 'Wah, saya berubah!';
+      
+      $('#button').click(() => {
+        if ($('#heading').text() === originalText) {
+          $('#heading').text(newText);
+        } else {
+          $('#heading').text(originalText);
         }
+      });
+
     </script>
 </body>
 </html>
