@@ -1,28 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wina's Static Page</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div class="container">
-        <h1 id="heading">Halo, Saya Wina! Doakan aku tetap survive ya ^^ </h1>
-        <button id="button" onclick="changeHeadingText()">Klik disini</button>
-    </div>
-    
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script>
-      let originalText = $('#heading').text();
-      let newText = 'Wah, saya berubah!';
-      
-      $('#button').click(() => {
-        if ($('#heading').text() === originalText) {
-          $('#heading').text(newText);
-        } else {
-          $('#heading').text(originalText);
-        }
-      });
-    </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wina's Static Web</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
